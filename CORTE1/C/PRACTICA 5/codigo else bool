@@ -4,7 +4,7 @@
 int main() {
     int time;
 
-    printf("Ingrese la hora en formato militar: ");
+    printf("Ingrese la hora: ");
     scanf("%d", &time);
 
     bool isDay = time < 18;
