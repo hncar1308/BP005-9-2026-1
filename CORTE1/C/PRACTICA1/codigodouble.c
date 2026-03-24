@@ -16,5 +16,4 @@ printf("La suma de %.2f y %.2f es: %2f\n", num1, num2, suma);
 
 
 return 0;
-
 }
