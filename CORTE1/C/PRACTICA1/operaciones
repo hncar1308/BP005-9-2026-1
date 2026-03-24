@@ -25,9 +25,9 @@ int main() {
         a=3;
         b=5;
         r=sum(a, b);
-        printf("la suma de los resultados es %d \n", r);
-        printf("la resta de los resultados es %d \n", resta(a, b));
-        printf("la multiplicacion de los resultados es %d \n", mult(a, b)); 
+        printf("la suma de los numeros es %d \n", r);
+        printf("la resta de los numeros es %d \n", resta(a, b));
+        printf("la multiplicacion de los numeros es %d \n", mult(a, b)); 
         imprimir();
         return 0;
 
