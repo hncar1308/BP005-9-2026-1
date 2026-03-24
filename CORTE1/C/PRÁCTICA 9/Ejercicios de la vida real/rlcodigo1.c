@@ -7,7 +7,7 @@ int main() {
         if (doorCode == 1337) {
                 printf("Codigo correcto.\nLa puerta esta abierta.");
         } else {
-                printf("Codigo incorrecto.\nLa puerta se mantendra cerrada.");
+                printf("Codigo incorrecto.\nLa puerta sigue cerrada.");
         }
 return 0;
 }
