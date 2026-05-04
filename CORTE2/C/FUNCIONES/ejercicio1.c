@@ -3,13 +3,18 @@
 float convertirAFahrenheit(float celsius);
 
 int main() {
-    float celsius;
-    printf("Ingrese la temperatura en Celsius: ");
+    float celsius, fahrenheit;
+
+    printf("Digite la temperatura en Celsius: ");
     scanf("%f", &celsius);
-    printf("La temperatura en Fahrenheit es: %.2f\n", convertirAFahrenheit(celsius));
+    
+    fahrenheit = convertirAFahrenheit(celsius);
+
+    printf("Temperatura en Fahrenheit: %.2f\n", fahrenheit);
+
     return 0;
 }
 
 float convertirAFahrenheit(float celsius) {
-    return (celsius * 9 / 5) + 32;
+    return (9.0 / 5.0 * celsius) + 32;
 }
