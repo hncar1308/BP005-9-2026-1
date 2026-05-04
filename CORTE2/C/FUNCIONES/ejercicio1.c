@@ -6,7 +6,7 @@ int main() {
     float celsius;
     printf("Ingrese la temperatura en Celsius: ");
     scanf("%f", &celsius);
-    printf("La temperatura en Fahrenheit es: %.2f\n", convertirCelsiusAFahrenheit(celsius));
+    printf("La temperatura en Fahrenheit es: %.2f\n", convertirAFahrenheit(celsius));
     return 0;
 }
 
