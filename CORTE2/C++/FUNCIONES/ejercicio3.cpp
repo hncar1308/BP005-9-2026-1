@@ -1,0 +1,34 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int esAprobado(float nota);
+void mostrarMensaje(float nota, int resultado);
+
+int main() {
+    float nota;
+    int resultado;
+
+    cout << "Digite la nota: ";
+    cin >> nota;
+
+    resultado = esAprobado(nota);
+
+    mostrarMensaje(nota, resultado);
+
+    return 0;
+}
+
+int esAprobado(float nota) {
+    return (nota >= 3.0) ? 1 : 0;
+}
+
+void mostrarMensaje(float nota, int resultado) {
+    cout << fixed << setprecision(2);
+    if (resultado == 1) {
+        cout << "La nota " << nota << " es aprobatoria." << endl;
+    } else {
+        cout << "La nota " << nota << " no es aprobatoria." << endl;
+    }
+}
