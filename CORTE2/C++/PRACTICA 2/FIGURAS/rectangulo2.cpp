@@ -6,9 +6,9 @@ int main() {
 
         for (fila = 1; fila <= 4; fila++) {
                 for (columna = 1; columna <= 8; columna++) {
-                        cout << ("# ");
+                        cout << "# ";
                 }
-                cout << ("\n");
+                cout << "\n";
         }
     return 0;
 }
