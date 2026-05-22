@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int fila = 5;
+    int espacios, simbolos;
+
+    // Parte superior (incluye el centro)
+    while (fila >= 1) {
+        espacios = 5 - fila;
+        while (espacios > 0) {
+            cout << (" ");
+            espacios--;
+        }
+
+        simbolos = 2 * fila - 1;
+        while (simbolos > 0) {
+            cout << ("#");
+            simbolos--;
+        }
+
+        cout << ("\n");
+        fila--;
+    }
+
+    // Parte inferior
+    fila = 2;
+    while (fila <= 5) {
+        espacios = 5 - fila;
+        while (espacios > 0) {
+            cout << (" ");
+            espacios--;
+        }
+
+        simbolos = 2 * fila - 1;
+        while (simbolos > 0) {
+            cout << ("#");
+            simbolos--;
+        }
+
+        cout << ("\n");
+        fila++;
+    }  
+    return 0;
+}
