@@ -1,29 +1,27 @@
-const int PIN_POTENCIOMETRO = 19;
+const int PIN_POTENCIOMETRO = 34;
 const int ADC_MAX = 4095;
 const float VREF = 3.3;
 
 int leerADC(int pin) {
-  /* Esta función recibe un pin analógico y devuelve la lectura ADC. */
+
   int valor = analogRead(pin);
   return valor;
 }
 
 float calcularVoltaje(int valorADC) {
-  /* Convertimos el valor ADC a voltaje aproximado.
-  Se usa VREF = 5.0 porque Arduino UNO trabaja normalmente con 5V. */
+
   float voltaje = (valorADC * VREF) / ADC_MAX;
   return voltaje;
 }
 
 int calcularPorcentaje(int valorADC) {
-  /* Convertimos el valor ADC a porcentaje.
-  Se usa long para evitar desbordamiento en placas donde int es de 16 bits. */
+
   int porcentaje = (int)((long)valorADC * 100L / ADC_MAX);
   return porcentaje;
 }
 
 void mostrarDatos(int valorADC, float voltaje, int porcentaje) {
-  /* Mostramos los datos en una sola línea del Monitor Serial. */
+
   Serial.print("ADC = ");
   Serial.print(valorADC);
   Serial.print(" | Voltaje = ");
@@ -36,7 +34,7 @@ void mostrarDatos(int valorADC, float voltaje, int porcentaje) {
 
 void setup() {
   /* Iniciamos el Monitor Serial. */
-  Serial.begin(115200);
+  Serial.begin(9600);
 }
 
 void loop() {
