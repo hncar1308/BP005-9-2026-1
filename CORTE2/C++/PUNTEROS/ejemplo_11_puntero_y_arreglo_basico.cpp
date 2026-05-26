@@ -1,14 +1,15 @@
-#include <iostream>
+#include <iostream> 
+#include <stddef.h>
 using namespace std;
 
-int main(void) {
-    int datos[3] = {10, 20, 30};
-    int *p = datos;
+int main(void) { 
+    int *p = NULL; 
 
-    cout << "datos[0] = " << datos[0] << endl;
-	cout << "*p       = " << *p << endl;
-	cout << "*(p + 1) = " << *(p+1) << endl;
-	cout <<"*(p + 2) = " << *(p+2) << endl;
-	
+    if (p != NULL) { 
+        cout << "Valor = " << *p << endl;
+    } else {
+        cout << "p no apunta a una direccion valida." << endl;
+    }
+
 	return 0;
 }
