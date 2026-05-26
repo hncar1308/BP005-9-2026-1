@@ -1,7 +1,7 @@
-const int PIN_POTENCIOMETRO = 12;
+const int PIN_POTENCIOMETRO = 34;
 void setup() {
 
-Serial.begin(115200);}
+Serial.begin(9600);}
 void loop() {
 
 int valorADC = analogRead(PIN_POTENCIOMETRO);
