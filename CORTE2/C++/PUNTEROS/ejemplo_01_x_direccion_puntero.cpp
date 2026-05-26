@@ -6,8 +6,8 @@ int main(void) {
     int *p = &x;
     
     cout << "x = " << x << endl;
-    cout << "&x = " << (void *)&x << endl;
-    cout << "p = " << (void *)p << endl;
+    cout << "&x = " << &x << endl;
+    cout << "p = " << p << endl;
     cout << "*p = " << *p << endl;
     
     return 0;
